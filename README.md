@@ -1,2 +1,3 @@
-# ts-zen
+# TS Zen
+
 Types Testing Library

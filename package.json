@@ -1,13 +1,28 @@
 {
-  "name": "ts-zen",
+  "name": "@strapi/ts-zen",
   "version": "0.1.8",
-  "author": {
-    "name": "Jean-Sébastien Herbaux",
-    "url": "https://github.com/Convly"
+  "bugs": {
+    "url": "https://github.com/strapi/strapi/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapi/ts-zen.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Strapi Solutions SAS",
+    "email": "hi@strapi.io",
+    "url": "https://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "Strapi Solutions SAS",
+      "email": "hi@strapi.io",
+      "url": "https://strapi.io"
+    }
+  ],
   "main": "./lib/src/index.js",
   "types": "./lib/src/index.d.ts",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.10",
