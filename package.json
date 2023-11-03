@@ -1,24 +1,24 @@
 {
-  "name": "@strapi/ts-zen",
-  "version": "0.1.8",
+  "name": "@dataspai/dataspai-tsz",
+  "version": "0.0.0",
   "bugs": {
-    "url": "https://github.com/strapi/strapi/issues"
+    "url": "https://github.com/dataspai/dataspai/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/ts-zen.git"
+    "url": "git://github.com/dataspai/tsz.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Strapi Solutions SAS",
-    "email": "hi@strapi.io",
-    "url": "https://strapi.io"
+    "name": "DataSpAI Solutions",
+    "email": "hi@dataspai.com",
+    "url": "https://dataspai.com"
   },
   "maintainers": [
     {
-      "name": "Strapi Solutions SAS",
-      "email": "hi@strapi.io",
-      "url": "https://strapi.io"
+      "name": "DataSpAI Solutions",
+      "email": "hi@dataspai.com",
+      "url": "https://dataspai.com"
     }
   ],
   "main": "./lib/src/index.js",
@@ -26,17 +26,17 @@
   "devDependencies": {
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.10",
-    "concurrently": "^8.2.0",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.1",
     "ts-jest": "^29.1.1",
     "tsc-alias": "^1.8.7",
-    "typescript": "^5.1.x",
-    "jest": "^29.6.x"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "typescript": "^5.1.x",
-    "jest": "^29.6.x"
+    "jest": "^29.7.0",
+    "typescript": "^5.2.2"
   },
   "scripts": {
     "build": "tsc && tsc-alias",

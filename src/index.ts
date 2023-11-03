@@ -33,17 +33,17 @@ expect.extend({
     params: Parameters<TMatchers[TMatcherName]>,
     matchers: TMatchers,
     matcherUtils: MatchersUtils
-  ) {
+  ): ReturnType<TMatchers[TMatcherName]> {
     if (!(matcherName in matchers)) {
       throw new Error(`Unknown matcher ${String(matcherName)} for type "${typeName}"`);
     }
 
-    const matcher = matchers[matcherName];
+    const matcher = matchers[matcherName] as (...args: any) => any;
 
     let result: ExpectResult;
 
     try {
-      result = (matcher as Function).call(matchers, matcherUtils.getContext(), ...params);
+      result = matcher.call(matchers, matcherUtils.getContext(), ...params);
     } catch (e) {
       // Transform expectation errors to regular expect results
       if (e instanceof ExpectationError) {
@@ -70,7 +70,7 @@ declare global {
         params: Parameters<TMatchers[TMatcherName]>,
         matchers: TMatchers,
         matchersUtils: MatchersUtils
-      ): void;
+      ): ReturnType<TMatchers[TMatcherName]>;
     }
   }
 }
